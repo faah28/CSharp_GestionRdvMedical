@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+<<<<<<< HEAD
 using AppGroupe2.Model;
+=======
+>>>>>>> 8f904f457910be6f53a33265328af12516297100
 using AppGroupe2.View;
 
 namespace AppGroupe2
@@ -16,11 +19,15 @@ namespace AppGroupe2
         [STAThread]
         static void Main()
         {
+<<<<<<< HEAD
             CreateAdmin();
+=======
+>>>>>>> 8f904f457910be6f53a33265328af12516297100
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new frmConnexion());
         }
+<<<<<<< HEAD
 
         static void CreateAdmin()
         {
@@ -41,5 +48,7 @@ namespace AppGroupe2
                 db.SaveChanges();
             }
         }
+=======
+>>>>>>> 8f904f457910be6f53a33265328af12516297100
     }
 }

@@ -20,11 +20,18 @@ namespace AppGroupe2.View
         {
             InitializeComponent();
         }
+<<<<<<< HEAD
         //BdRvMedicalContext db=new BdRvMedicalContext();
         ServiceMetier.Service1Client service = new ServiceMetier.Service1Client();
         private void frmAgenda_Load(object sender, EventArgs e)
         {
             var m = service.GetMedecinById(idMedecin); //db.Medecins.Find(idMedecin);
+=======
+        BdRvMedicalContext db=new BdRvMedicalContext();
+        private void frmAgenda_Load(object sender, EventArgs e)
+        {
+            var m=db.Medecins.Find(idMedecin);
+>>>>>>> 8f904f457910be6f53a33265328af12516297100
             lblMedecin.Text = string.Format("N Ordre: {0},Nom prenom: {1}", m.NumeroOrdre, m.NomPrenom);
             lblIdMedecin.Text=m.IdU.ToString();
             lblIdMedecin.Visible=false;
@@ -40,7 +47,11 @@ namespace AppGroupe2.View
         {
             try
             {
+<<<<<<< HEAD
                 ServiceMetier.Agenda a = new ServiceMetier.Agenda();
+=======
+                Agenda a = new Agenda();
+>>>>>>> 8f904f457910be6f53a33265328af12516297100
                 a.Creneau = int.Parse(txtCreneau.Text);
                 a.HeureFin = txtHeureFin.Text;
                 a.HeureDebut = txtHeureDebut.Text;
@@ -49,10 +60,18 @@ namespace AppGroupe2.View
                 a.Statut = "Brouillon";
                 a.Lieu = txtLieu.Text;
                 a.Titre = txtTitre.Text;
+<<<<<<< HEAD
                 service.AddAgenda(a);
 
 
                 var dernierAgenda = service.GetListeAgenda().OrderByDescending(b => b.IdAgenda).FirstOrDefault();
+=======
+                db.Agenda.Add(a);
+                db.SaveChanges();
+
+
+                var dernierAgenda = db.Agenda.OrderByDescending(b => b.IdAgenda).FirstOrDefault();
+>>>>>>> 8f904f457910be6f53a33265328af12516297100
                 if (dernierAgenda != null)
                 {
                     MessageBox.Show($"Dernier agenda ajouté : {dernierAgenda.IdAgenda} - {dernierAgenda.Titre}");
@@ -76,7 +95,11 @@ namespace AppGroupe2.View
         }
         private void  ResetForrm()
         {
+<<<<<<< HEAD
             dgAgenda.DataSource = service.GetListeAgenda()
+=======
+            dgAgenda.DataSource = db.Agenda
+>>>>>>> 8f904f457910be6f53a33265328af12516297100
             .Where(a => a.IdMedecin == idMedecin) // 🔥 Enlever le filtre sur la date
             .OrderByDescending(a => a.DatePlanifie) // 🔥 Trier du plus récent au plus ancien
             .ToList();

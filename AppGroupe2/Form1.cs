@@ -10,13 +10,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+<<<<<<< HEAD
 using System.Security.Cryptography;
+=======
+>>>>>>> 8f904f457910be6f53a33265328af12516297100
 
 namespace AppGroupe2
 {
     public partial class frmConnexion : Form
     {
+<<<<<<< HEAD
         BdRvMedicalContext db = new BdRvMedicalContext();
+=======
+>>>>>>> 8f904f457910be6f53a33265328af12516297100
         public frmConnexion()
         {
             InitializeComponent();
@@ -54,7 +60,11 @@ namespace AppGroupe2
 
         private void btnSeConnecter_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
            
+=======
+            
+>>>>>>> 8f904f457910be6f53a33265328af12516297100
         }
 
         private void btnQuitter_Click(object sender, EventArgs e)
@@ -74,6 +84,7 @@ namespace AppGroupe2
 
         private void btnSeConnecter_Click_1(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             var leUser = db.Utilisateurs.Where(a => a.Identifiant.ToLower() == txtNomUtilisateur.Text.ToLower()).FirstOrDefault();
             if ((leUser != null) && (CryptString.VerifyMd5Hash(txtMotDePasse.Text , leUser.MotDePasse)))
             {
@@ -89,6 +100,11 @@ namespace AppGroupe2
             }
 
             
+=======
+            frmMDI f = new frmMDI();
+            f.Show();
+            this.Hide();
+>>>>>>> 8f904f457910be6f53a33265328af12516297100
 
 
             //string username = txtNomUtilisateur.Text.Trim();

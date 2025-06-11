@@ -26,8 +26,12 @@ namespace AppGroupe2.Model
         public DbSet<Specialite> Specialite { get; set; }
         public DbSet<Soin> Soin { get; set; }
         public DbSet<Td_Erreur> td_Erreurs { get; set; }
+<<<<<<< HEAD
         public DbSet<Admin> admins { get; set; }
         public DbSet<Role> roles { get; set; }
+=======
+
+>>>>>>> 8f904f457910be6f53a33265328af12516297100
 
     }
 }
