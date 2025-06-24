@@ -1,0 +1,104 @@
+[33mcommit 9185d1b7a9138e361717403af7a296913ecb8d57[m[33m ([m[1;36mHEAD -> [m[1;32mmgdev[m[33m, [m[1;31morigin/mgdev[m[33m)[m
+Author: mamadou gueye <odcmamadougueye@gmail.com>
+Date:   Wed Jul 9 00:30:04 2025 +0200
+
+    dSecraitaire
+
+[33mcommit de58a59da7689a83da8678954b11b2c05527ef49[m
+Merge: 89dd645 323179f
+Author: mamadou gueye <odcmamadougueye@gmail.com>
+Date:   Wed Jul 9 00:24:38 2025 +0200
+
+    Merge branch 'mgdev' of https://github.com/faah28/CSharp_GestionRdvMedical into mgdev
+
+[33mcommit 89dd645790ddf6dc32c48439c68bae7b96664dc6[m
+Author: mamadou gueye <odcmamadougueye@gmail.com>
+Date:   Wed Jul 9 00:24:00 2025 +0200
+
+    Rendez-vous
+
+[33mcommit 87cdcfc8b52194fdc89c6b7cb7771702b584c709[m
+Author: mamadou gueye <odcmamadougueye@gmail.com>
+Date:   Wed Jul 9 00:18:58 2025 +0200
+
+    Initialisation du projet ASP.NET Web API pour la gestion de RDV médicaux
+
+[33mcommit 323179ff29ee94fa03b3b908664868dc25f8c87b[m
+Author: mamadou gueye <odcmamadougueye@gmail.com>
+Date:   Wed Jul 9 00:13:47 2025 +0200
+
+    Medecin Controller comment
+
+[33mcommit fb8e9f7d9561a912b8ce8ca73a282afea7f4432e[m
+Author: mamadou gueye <odcmamadougueye@gmail.com>
+Date:   Wed Jul 9 00:12:14 2025 +0200
+
+    Medecin Controller comment
+
+[33mcommit a5f78159a9806bb03002881569898f93384f4e1e[m
+Author: mamadou gueye <odcmamadougueye@gmail.com>
+Date:   Wed Jul 9 00:09:34 2025 +0200
+
+    Admin Controller comment
+
+[33mcommit 7b444874998c5de131c1d10436bd14f3ff7cf378[m
+Author: mamadou gueye <odcmamadougueye@gmail.com>
+Date:   Wed Jul 9 00:06:47 2025 +0200
+
+    Update
+
+[33mcommit aac7909ebe0a0a026e0ddd5ed2cff494ac758cce[m
+Author: mamadou gueye <odcmamadougueye@gmail.com>
+Date:   Wed Jul 9 00:01:09 2025 +0200
+
+    AddAgenda
+
+[33mcommit f0dd9a63bd7c183f0dfb80c6d8d74b7a04a4191c[m[33m ([m[1;31morigin/mg[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmaster[m[33m)[m
+Merge: 5c61a12 175d348
+Author: faah28 <fsamba500@gmail.com>
+Date:   Wed Jun 25 20:58:28 2025 +0200
+
+    Merge branch 'master' of https://github.com/faah28/CSharp_GestionRdvMedical
+
+[33mcommit 5c61a1296cabc2a165c6d8f4ef3d6190554961cf[m
+Author: faah28 <fsamba500@gmail.com>
+Date:   Wed Jun 25 20:57:07 2025 +0200
+
+    API
+
+[33mcommit 175d348372efdb32bc97dfa4b36e7737e409ab9c[m
+Author: Aida Mbaye <mbayeaida212@gmail.com>
+Date:   Wed Jun 11 15:10:17 2025 +0000
+
+    modification
+
+[33mcommit ea247e2662373525a75cdba649cfbae8ca8601fd[m
+Merge: 672b501 8f904f4
+Author: faah28 <fsamba500@gmail.com>
+Date:   Wed Jun 11 15:42:58 2025 +0200
+
+    ajout service metier
+
+[33mcommit 672b5015e18cc8252ede195e6f7fadfeda159e3c[m
+Author: faah28 <fsamba500@gmail.com>
+Date:   Wed Jun 11 15:28:40 2025 +0200
+
+    ajout service metier
+
+[33mcommit 8f904f457910be6f53a33265328af12516297100[m
+Author: Aida Mbaye <mbayeaida212@gmail.com>
+Date:   Wed Jun 11 10:57:55 2025 +0000
+
+    ajout des derniers dossiers
+
+[33mcommit 8ed19f1b85900b094e746299760f957d996ad2cc[m
+Author: xalill <xalill@DESKTOP-AT20PK7>
+Date:   Wed Mar 12 13:15:13 2025 +0100
+
+    Ajoutez des fichiers projet.
+
+[33mcommit ec6737b7e9b5a20a32e7ce04b6997c873edb53c9[m
+Author: xalill <xalill@DESKTOP-AT20PK7>
+Date:   Wed Mar 12 13:15:06 2025 +0100
+
+    Ajouter .gitattributes et .gitignore
