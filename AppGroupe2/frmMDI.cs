@@ -14,7 +14,10 @@ namespace AppGroupe2
 {
     public partial class frmMDI : Form
     {
+<<<<<<< HEAD
         public string role;
+=======
+>>>>>>> 8f904f457910be6f53a33265328af12516297100
         public frmMDI()
         {
             InitializeComponent();
@@ -48,6 +51,7 @@ namespace AppGroupe2
             //this.Width = myComputer.Screen.Bounds.Width;
             //this.Height = myComputer.Screen.Bounds.Height;
             this.Location = new Point(0,0);
+<<<<<<< HEAD
             if(role== "Admin")
             {
                 btnPatient.Visible= false;
@@ -64,6 +68,8 @@ namespace AppGroupe2
                 btnActions.Visible = false;
             }
 
+=======
+>>>>>>> 8f904f457910be6f53a33265328af12516297100
 
         }
 
@@ -119,10 +125,13 @@ namespace AppGroupe2
             f.Show();
             f.WindowState = FormWindowState.Maximized;
         }
+<<<<<<< HEAD
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
 
         }
+=======
+>>>>>>> 8f904f457910be6f53a33265328af12516297100
     }
 }
