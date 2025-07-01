@@ -1,4 +1,4 @@
-﻿namespace APIRdvMedical1.Migrations
+﻿ namespace APIRdvMedical1.Migrations
 {
     using System;
     using System.Data.Entity;

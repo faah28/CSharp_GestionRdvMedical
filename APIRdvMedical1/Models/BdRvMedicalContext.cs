@@ -27,5 +27,38 @@ namespace APIRdvMedical1.Model
         public DbSet<Td_Erreur> Td_Erreurs { get; set; }
         public DbSet<Admin> Admins { get; set; }
         public DbSet<Role> Roles { get; set; }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            // Configuration du mapping par héritage TPH pour Personne
+            modelBuilder.Entity<Personne>()
+                .Map<Utilisateur>(m => m.Requires("Discriminator").HasValue("Utilisateur"))
+                .Map<Patient>(m => m.Requires("Discriminator").HasValue("Patient"))
+                .Map<Medecin>(m => m.Requires("Discriminator").HasValue("Medecin"))
+                .Map<Secretaire>(m => m.Requires("Discriminator").HasValue("Secretaire"))
+                .Map<Admin>(m => m.Requires("Discriminator").HasValue("Admin"));
+
+            // Configuration des clés étrangères optionnelles si besoin
+            modelBuilder.Entity<Medecin>()
+                .HasRequired(m => m.Specialite)
+                .WithMany(s => s.Medecins)
+                .HasForeignKey(m => m.IdSpecialite)
+                .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<Utilisateur>()
+                .HasOptional(u => u.Role)
+                .WithMany()
+                .HasForeignKey(u => u.IdRole)
+                .WillCascadeOnDelete(false);
+
+            // Pour éviter que EF tente de supprimer des entités liées en cascade
+            modelBuilder.Conventions.Remove<System.Data.Entity.ModelConfiguration.Conventions.OneToManyCascadeDeleteConvention>();
+        }
+
     }
+
+
+
 }

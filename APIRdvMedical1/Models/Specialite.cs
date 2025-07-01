@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -15,6 +16,7 @@ namespace APIRdvMedical1.Model
         public string CodeSpecialite { get; set; } 
         [Required, MaxLength(100)]
         public string NomSpecialite { get; set; }
+        [JsonIgnore]
         public ICollection<Medecin> Medecins { get; set; }
 
     }
