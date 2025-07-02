@@ -77,8 +77,8 @@ namespace AppGroupe2.View
         private void  ResetForrm()
         {
             dgAgenda.DataSource = service.GetListeAgenda()
-            .Where(a => a.IdMedecin == idMedecin) // 🔥 Enlever le filtre sur la date
-            .OrderByDescending(a => a.DatePlanifie) // 🔥 Trier du plus récent au plus ancien
+            .Where(a => a.IdMedecin == idMedecin) //  Enlever le filtre sur la date
+            .OrderByDescending(a => a.DatePlanifie) //  Trier du plus récent au plus ancien
             .ToList();
 
             txtCreneau.Text=string.Empty;
@@ -101,7 +101,7 @@ namespace AppGroupe2.View
                 // Ouvrir le formulaire frmRendezVous en passant l'ID de l'agenda
                 frmRendezVous f = new frmRendezVous (idAgenda);
                 f.Show();
-                // Optionnel : désactiver le formulaire courant si besoin
+                
                 this.Enabled = false;
             }
             else
