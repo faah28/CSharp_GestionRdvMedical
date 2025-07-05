@@ -47,7 +47,7 @@ namespace ServiceSendMail
             //Thread.Sleep(300000);
             aTimer.Start();
         }
- 
+
         protected override void OnStop()
         {
             aTimer.Stop();
@@ -65,3 +65,9 @@ namespace ServiceSendMail
         }
     }
 }
+
+// Nous avons créé un service Windows nommé ServiceL3GLGroupe2 qui utilise un timer pour exécuter une tâche périodiquement.
+// Le service démarre un timer qui déclenche un événement toutes les secondes.
+// Lors de chaque déclenchement, il enregistre un message dans le journal des événements Windows.
+// Le service peut être démarré et arrêté, et il enregistre des messages dans le journal des événements pour indiquer son état (démarrage et arrêt).
+// Le service utilise la classe EventLog pour écrire des entrées dans le journal des événements,
