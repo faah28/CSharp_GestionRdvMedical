@@ -4,8 +4,8 @@ using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using MySql.Data.EntityFramework; // pour MySQL
-using APIRdvMedical1.Model;       // ✅ pour les entités
+using MySql.Data.EntityFramework; 
+using APIRdvMedical1.Model;       
 
 namespace APIRdvMedical1.Model
 {
