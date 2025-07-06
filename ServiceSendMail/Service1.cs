@@ -10,13 +10,11 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Timers;
 
-
 namespace ServiceSendMail
 {
     public partial class ServiceL3GLGroupe2: ServiceBase
     {
-        private static Timer aTimer;
-
+        private static System.Timers.Timer aTimer;
         public ServiceL3GLGroupe2()
         {
             InitializeComponent();
@@ -40,7 +38,7 @@ namespace ServiceSendMail
             {
                 WriteLogSystem("test", DateTime.Now.ToString());
             }
-            catch(Exception)
+            catch (Exception)
             {
 
             }
@@ -65,9 +63,3 @@ namespace ServiceSendMail
         }
     }
 }
-
-// Nous avons créé un service Windows nommé ServiceL3GLGroupe2 qui utilise un timer pour exécuter une tâche périodiquement.
-// Le service démarre un timer qui déclenche un événement toutes les secondes.
-// Lors de chaque déclenchement, il enregistre un message dans le journal des événements Windows.
-// Le service peut être démarré et arrêté, et il enregistre des messages dans le journal des événements pour indiquer son état (démarrage et arrêt).
-// Le service utilise la classe EventLog pour écrire des entrées dans le journal des événements,
