@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static Mysqlx.Notice.Warning.Types;
+//using static Mysqlx.Notice.Warning.Types;
 using AppGroupe2.Model;
 using AppGroupe2.Report;
 

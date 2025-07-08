@@ -12,6 +12,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetierRvMedical", "MetierRv
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIRdvMedical1", "APIRdvMedical1\APIRdvMedical1.csproj", "{90E8B5E3-73FE-42DE-81BF-6DE6C74E9152}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceSendMail", "ServiceSendMail\ServiceSendMail.csproj", "{0C7AEB14-4793-4254-8962-E694D48AF75E}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetupRvMedical", "SetupRvMedical\SetupRvMedical.vdproj", "{FBB64DD0-11E4-5342-F0F0-290205C36C64}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetupSenMail", "SetupSenMail\SetupSenMail.vdproj", "{268041BD-2E68-4848-0A55-C3EAEAE49E52}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,6 +36,14 @@ Global
 		{90E8B5E3-73FE-42DE-81BF-6DE6C74E9152}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90E8B5E3-73FE-42DE-81BF-6DE6C74E9152}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90E8B5E3-73FE-42DE-81BF-6DE6C74E9152}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C7AEB14-4793-4254-8962-E694D48AF75E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C7AEB14-4793-4254-8962-E694D48AF75E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C7AEB14-4793-4254-8962-E694D48AF75E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C7AEB14-4793-4254-8962-E694D48AF75E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBB64DD0-11E4-5342-F0F0-290205C36C64}.Debug|Any CPU.ActiveCfg = Debug
+		{FBB64DD0-11E4-5342-F0F0-290205C36C64}.Release|Any CPU.ActiveCfg = Release
+		{268041BD-2E68-4848-0A55-C3EAEAE49E52}.Debug|Any CPU.ActiveCfg = Debug
+		{268041BD-2E68-4848-0A55-C3EAEAE49E52}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
