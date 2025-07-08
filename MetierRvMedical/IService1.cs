@@ -14,6 +14,8 @@ namespace MetierRvMedical
     public interface IService1
     {
 
+
+
         [OperationContract]
         string GetData(int value);
 
@@ -22,11 +24,13 @@ namespace MetierRvMedical
 
         [OperationContract]
 
+
         bool UpdateAgenda(Agenda agenda);
         [OperationContract]
 
-        bool AddAgenda(Agenda agenda);
+        // Méthode pour ajouter un nouvel agenda
         [OperationContract]
+        bool AddAgenda(Agenda agenda);
         List<Agenda> GetListeAgenda();
 
         [OperationContract]
