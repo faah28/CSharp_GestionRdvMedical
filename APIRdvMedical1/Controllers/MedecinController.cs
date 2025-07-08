@@ -5,31 +5,51 @@ using System.Web.Http;
 
 namespace APIRdvMedical1.Controllers
 {
+    /// <summary>
+    /// API REST pour la gestion des médecins.
+    /// Permet d'effectuer les opérations CRUD sur les entités Medecin.
+    /// </summary>
     public class MedecinController : ApiController
     {
+        // Contexte de base de données
         private BdRvMedicalContext db = new BdRvMedicalContext();
 
-        // GET: api/Medecin
+        /// <summary>
+        /// GET: api/Medecin
+        /// Récupère la liste complète des médecins avec leur spécialité.
+        /// </summary>
+        /// <returns>Liste des médecins</returns>
         public IEnumerable<Medecin> Get()
         {
+            // Chargement des médecins avec relation vers leur spécialité
             return db.Medecins.Include("Specialite").ToList();
         }
 
-        // GET: api/Medecin/5
+        /// <summary>
+        /// GET: api/Medecin/{id}
+        /// Récupère un médecin spécifique par son identifiant.
+        /// </summary>
+        /// <param name="id">Identifiant du médecin</param>
+        /// <returns>Objet Medecin ou erreur 404</returns>
         public IHttpActionResult Get(int id)
         {
             var medecin = db.Medecins.FirstOrDefault(m => m.IdU == id);
             if (medecin == null)
-                return NotFound();
+                return NotFound(); // 404 si non trouvé
 
-            return Ok(medecin);
+            return Ok(medecin); // 200 OK avec données
         }
 
-        // POST: api/Medecin
+        /// <summary>
+        /// POST: api/Medecin
+        /// Crée un nouveau médecin.
+        /// </summary>
+        /// <param name="medecin">Données du médecin</param>
+        /// <returns>HTTP 201 Created avec le médecin ou 400 si invalide</returns>
         public IHttpActionResult Post([FromBody] Medecin medecin)
         {
             if (!ModelState.IsValid)
-                return BadRequest(ModelState);
+                return BadRequest(ModelState); // validation échouée
 
             db.Medecins.Add(medecin);
             db.SaveChanges();
@@ -37,7 +57,13 @@ namespace APIRdvMedical1.Controllers
             return CreatedAtRoute("DefaultApi", new { id = medecin.IdU }, medecin);
         }
 
-        // PUT: api/Medecin/5
+        /// <summary>
+        /// PUT: api/Medecin/{id}
+        /// Met à jour les informations d’un médecin existant.
+        /// </summary>
+        /// <param name="id">ID du médecin</param>
+        /// <param name="medecin">Données à mettre à jour</param>
+        /// <returns>HTTP 200 OK ou 404 si non trouvé</returns>
         public IHttpActionResult Put(int id, [FromBody] Medecin medecin)
         {
             if (!ModelState.IsValid)
@@ -47,7 +73,7 @@ namespace APIRdvMedical1.Controllers
             if (existing == null)
                 return NotFound();
 
-            // Mise à jour des champs hérités de Personne et Utilisateur
+            // Mise à jour des champs communs (hérités)
             existing.NomPrenom = medecin.NomPrenom;
             existing.Adresse = medecin.Adresse;
             existing.Email = medecin.Email;
@@ -57,17 +83,20 @@ namespace APIRdvMedical1.Controllers
             existing.Statut = medecin.Statut;
             existing.IdRole = medecin.IdRole;
 
-            // Champs propres à Medecin
+            // Mise à jour des champs spécifiques à Medecin
             existing.NumeroOrdre = medecin.NumeroOrdre;
             existing.IdSpecialite = medecin.IdSpecialite;
 
             db.SaveChanges();
-
             return Ok(existing);
         }
 
-
-        // DELETE: api/Medecin/5
+        /// <summary>
+        /// DELETE: api/Medecin/{id}
+        /// Supprime un médecin par son ID.
+        /// </summary>
+        /// <param name="id">ID du médecin</param>
+        /// <returns>HTTP 200 OK ou 404 si inexistant</returns>
         public IHttpActionResult Delete(int id)
         {
             var medecin = db.Medecins.FirstOrDefault(m => m.IdU == id);
@@ -77,7 +106,7 @@ namespace APIRdvMedical1.Controllers
             db.Medecins.Remove(medecin);
             db.SaveChanges();
 
-            return Ok();
+            return Ok(); // succès de la suppression
         }
     }
 }
