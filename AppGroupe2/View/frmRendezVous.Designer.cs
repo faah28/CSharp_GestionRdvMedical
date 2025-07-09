@@ -37,10 +37,10 @@
             // btnClose
             // 
             this.btnClose.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnClose.Location = new System.Drawing.Point(1065, 8);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.btnClose.Location = new System.Drawing.Point(1598, 12);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(9, 8, 9, 8);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(96, 34);
+            this.btnClose.Size = new System.Drawing.Size(144, 52);
             this.btnClose.TabIndex = 57;
             this.btnClose.Text = "Fermer";
             this.btnClose.UseVisualStyleBackColor = false;
@@ -48,10 +48,12 @@
             // dgRendezVous
             // 
             this.dgRendezVous.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
-            this.dgRendezVous.Location = new System.Drawing.Point(16, 62);
-            this.dgRendezVous.Margin = new System.Windows.Forms.Padding(7, 5, 7, 5);
+            this.dgRendezVous.ColumnHeadersHeight = 34;
+            this.dgRendezVous.Location = new System.Drawing.Point(19, 109);
+            this.dgRendezVous.Margin = new System.Windows.Forms.Padding(10, 8, 10, 8);
             this.dgRendezVous.Name = "dgRendezVous";
-            this.dgRendezVous.Size = new System.Drawing.Size(915, 449);
+            this.dgRendezVous.RowHeadersWidth = 62;
+            this.dgRendezVous.Size = new System.Drawing.Size(1372, 691);
             this.dgRendezVous.TabIndex = 76;
             this.dgRendezVous.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgRendezVous_CellContentClick);
             // 
@@ -59,26 +61,27 @@
             // 
             this.lblNom.AutoSize = true;
             this.lblNom.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNom.Location = new System.Drawing.Point(27, 29);
+            this.lblNom.Location = new System.Drawing.Point(40, 45);
+            this.lblNom.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNom.Name = "lblNom";
-            this.lblNom.Size = new System.Drawing.Size(184, 27);
+            this.lblNom.Size = new System.Drawing.Size(272, 41);
             this.lblNom.TabIndex = 77;
             this.lblNom.Text = "Mes Rendez-vous";
             // 
             // frmRendezVous
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Turquoise;
-            this.ClientSize = new System.Drawing.Size(1174, 553);
+            this.ClientSize = new System.Drawing.Size(1761, 851);
             this.ControlBox = false;
             this.Controls.Add(this.lblNom);
             this.Controls.Add(this.dgRendezVous);
             this.Controls.Add(this.btnClose);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmRendezVous";
             this.Text = "RendezVous";
             this.Load += new System.EventHandler(this.frmRendezVous_Load);
-
             ((System.ComponentModel.ISupportInitialize)(this.dgRendezVous)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

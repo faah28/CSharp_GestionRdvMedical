@@ -12,7 +12,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetierRvMedical", "MetierRv
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIRdvMedical1", "APIRdvMedical1\APIRdvMedical1.csproj", "{90E8B5E3-73FE-42DE-81BF-6DE6C74E9152}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceSendMail", "ServiceSendMail\ServiceSendMail.csproj", "{0B45CA11-7DE9-466D-8DEC-88AB00C6979F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceSendMail", "ServiceSendMail\ServiceSendMail.csproj", "{0C7AEB14-4793-4254-8962-E694D48AF75E}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetupSendMail", "SetupSendMail\SetupSendMail.vdproj", "{9174F0DE-9E5D-478C-4647-34D01ED854A0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,10 +34,12 @@ Global
 		{90E8B5E3-73FE-42DE-81BF-6DE6C74E9152}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90E8B5E3-73FE-42DE-81BF-6DE6C74E9152}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90E8B5E3-73FE-42DE-81BF-6DE6C74E9152}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0B45CA11-7DE9-466D-8DEC-88AB00C6979F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0B45CA11-7DE9-466D-8DEC-88AB00C6979F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0B45CA11-7DE9-466D-8DEC-88AB00C6979F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0B45CA11-7DE9-466D-8DEC-88AB00C6979F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C7AEB14-4793-4254-8962-E694D48AF75E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C7AEB14-4793-4254-8962-E694D48AF75E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C7AEB14-4793-4254-8962-E694D48AF75E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C7AEB14-4793-4254-8962-E694D48AF75E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9174F0DE-9E5D-478C-4647-34D01ED854A0}.Debug|Any CPU.ActiveCfg = Debug
+		{9174F0DE-9E5D-478C-4647-34D01ED854A0}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

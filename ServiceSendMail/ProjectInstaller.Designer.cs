@@ -29,31 +29,31 @@
         private void InitializeComponent()
         {
             this.serviceProcessInstaller1 = new System.ServiceProcess.ServiceProcessInstaller();
-            this.ServiceL3GLGroupe2 = new System.ServiceProcess.ServiceInstaller();
+            this.ServiceL3GLG2 = new System.ServiceProcess.ServiceInstaller();
             // 
             // serviceProcessInstaller1
             // 
             this.serviceProcessInstaller1.Account = System.ServiceProcess.ServiceAccount.LocalService;
             this.serviceProcessInstaller1.Password = null;
             this.serviceProcessInstaller1.Username = null;
-            this.serviceProcessInstaller1.AfterInstall += new System.Configuration.Install.InstallEventHandler(this.serviceProcessInstaller1_AfterInstall);
             // 
-            // ServiceL3GLGroupe2
+            // ServiceL3GLG2
             // 
-            this.ServiceL3GLGroupe2.DisplayName = "ServiceL3GLGroupe2";
-            this.ServiceL3GLGroupe2.ServiceName = "ServiceL3GLGroupe2";
+            this.ServiceL3GLG2.DisplayName = "ServiceL3GLG2";
+            this.ServiceL3GLG2.ServiceName = "ServiceL3GLG2";
+            this.ServiceL3GLG2.AfterInstall += new System.Configuration.Install.InstallEventHandler(this.ServiceL3GLG2_AfterInstall);
             // 
             // ProjectInstaller
             // 
             this.Installers.AddRange(new System.Configuration.Install.Installer[] {
             this.serviceProcessInstaller1,
-            this.ServiceL3GLGroupe2});
+            this.ServiceL3GLG2});
 
         }
 
         #endregion
 
         private System.ServiceProcess.ServiceProcessInstaller serviceProcessInstaller1;
-        private System.ServiceProcess.ServiceInstaller ServiceL3GLGroupe2;
+        private System.ServiceProcess.ServiceInstaller ServiceL3GLG2;
     }
 }

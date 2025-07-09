@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0B45CA11-7DE9-466D-8DEC-88AB00C6979F}</ProjectGuid>
+    <ProjectGuid>{0C7AEB14-4793-4254-8962-E694D48AF75E}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>ServiceSendMail</RootNamespace>
     <AssemblyName>ServiceSendMail</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>

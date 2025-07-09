@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ServiceSendMail
 {
-    static class Program
+    internal static class Program
     {
         /// <summary>
         /// Point d'entrée principal de l'application.
@@ -15,9 +15,9 @@ namespace ServiceSendMail
         static void Main()
         {
             ServiceBase[] ServicesToRun;
-            ServicesToRun = new ServiceBase[] 
-            { 
-                new ServiceL3GLGroupe2() 
+            ServicesToRun = new ServiceBase[]
+            {
+                new ServiceL3GLG2()
             };
             ServiceBase.Run(ServicesToRun);
         }
