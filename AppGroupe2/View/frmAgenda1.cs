@@ -111,5 +111,10 @@ namespace AppGroupe2.View
             }
 
         }
+
+        private void lblDate_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -244,5 +244,30 @@ namespace AppGroupe2.View
             dtpDateNaissance.Value = !string.IsNullOrEmpty(dgPatient.CurrentRow.Cells[3].Value.ToString()) ? DateTime.Parse(dgPatient.CurrentRow.Cells[3].Value.ToString()) : DateTime.Now;
 
         }
+
+        private void lblGroupeSanguin_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtTelephone_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblDateNaissance_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNomPrenom_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgPatient_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

@@ -77,9 +77,9 @@
             this.gbRecherche.Controls.Add(this.label2);
             this.gbRecherche.Controls.Add(this.label1);
             this.gbRecherche.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.gbRecherche.Location = new System.Drawing.Point(549, 35);
+            this.gbRecherche.Location = new System.Drawing.Point(493, 63);
             this.gbRecherche.Name = "gbRecherche";
-            this.gbRecherche.Size = new System.Drawing.Size(821, 99);
+            this.gbRecherche.Size = new System.Drawing.Size(862, 164);
             this.gbRecherche.TabIndex = 18;
             this.gbRecherche.TabStop = false;
             this.gbRecherche.Text = "Recherche";
@@ -101,8 +101,8 @@
             this.txtREmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtREmail.IconLeft = ((System.Drawing.Image)(resources.GetObject("txtREmail.IconLeft")));
             this.txtREmail.IconLeftSize = new System.Drawing.Size(15, 15);
-            this.txtREmail.Location = new System.Drawing.Point(255, 52);
-            this.txtREmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtREmail.Location = new System.Drawing.Point(317, 69);
+            this.txtREmail.Margin = new System.Windows.Forms.Padding(4);
             this.txtREmail.Name = "txtREmail";
             this.txtREmail.PlaceholderText = "";
             this.txtREmail.SelectedText = "";
@@ -126,12 +126,12 @@
             this.txtRTel.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtRTel.IconLeft = ((System.Drawing.Image)(resources.GetObject("txtRTel.IconLeft")));
             this.txtRTel.IconLeftSize = new System.Drawing.Size(15, 15);
-            this.txtRTel.Location = new System.Drawing.Point(10, 52);
-            this.txtRTel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtRTel.Location = new System.Drawing.Point(41, 69);
+            this.txtRTel.Margin = new System.Windows.Forms.Padding(4);
             this.txtRTel.Name = "txtRTel";
             this.txtRTel.PlaceholderText = "";
             this.txtRTel.SelectedText = "";
-            this.txtRTel.Size = new System.Drawing.Size(208, 29);
+            this.txtRTel.Size = new System.Drawing.Size(232, 29);
             this.txtRTel.TabIndex = 45;
             this.txtRTel.TextChanged += new System.EventHandler(this.txtRTel_TextChanged);
             // 
@@ -145,9 +145,9 @@
             this.btnRv.FillColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnRv.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRv.ForeColor = System.Drawing.Color.Black;
-            this.btnRv.Location = new System.Drawing.Point(688, 21);
+            this.btnRv.Location = new System.Drawing.Point(665, 119);
             this.btnRv.Name = "btnRv";
-            this.btnRv.Size = new System.Drawing.Size(115, 30);
+            this.btnRv.Size = new System.Drawing.Size(168, 30);
             this.btnRv.TabIndex = 46;
             this.btnRv.Text = "Rendez-vous";
             this.btnRv.Click += new System.EventHandler(this.btnRv_Click_1);
@@ -162,9 +162,9 @@
             this.btnRechercher.FillColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnRechercher.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRechercher.ForeColor = System.Drawing.Color.Black;
-            this.btnRechercher.Location = new System.Drawing.Point(538, 21);
+            this.btnRechercher.Location = new System.Drawing.Point(471, 119);
             this.btnRechercher.Name = "btnRechercher";
-            this.btnRechercher.Size = new System.Drawing.Size(115, 30);
+            this.btnRechercher.Size = new System.Drawing.Size(162, 30);
             this.btnRechercher.TabIndex = 45;
             this.btnRechercher.Text = "Rechercher";
             this.btnRechercher.Click += new System.EventHandler(this.btnRechercher_Click_1);
@@ -172,20 +172,20 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(252, 32);
+            this.label2.Location = new System.Drawing.Point(312, 40);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(46, 16);
+            this.label2.Size = new System.Drawing.Size(65, 25);
             this.label2.TabIndex = 10;
             this.label2.Text = "Email";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 32);
+            this.label1.Location = new System.Drawing.Point(36, 40);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 16);
+            this.label1.Size = new System.Drawing.Size(115, 25);
             this.label1.TabIndex = 8;
             this.label1.Text = "Telephone";
             // 
@@ -211,11 +211,11 @@
             this.guna2Panel1.Controls.Add(this.lblEmail);
             this.guna2Panel1.Controls.Add(this.lblAdresse);
             this.guna2Panel1.Controls.Add(this.lblNomPrenom);
-            this.guna2Panel1.Location = new System.Drawing.Point(0, 38);
+            this.guna2Panel1.Location = new System.Drawing.Point(12, 38);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.BorderRadius = 24;
             this.guna2Panel1.ShadowDecoration.Color = System.Drawing.Color.Blue;
-            this.guna2Panel1.Size = new System.Drawing.Size(411, 488);
+            this.guna2Panel1.Size = new System.Drawing.Size(461, 665);
             this.guna2Panel1.TabIndex = 19;
             this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
             // 
@@ -229,9 +229,9 @@
             this.btnSupprimer.FillColor = System.Drawing.Color.Red;
             this.btnSupprimer.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSupprimer.ForeColor = System.Drawing.Color.White;
-            this.btnSupprimer.Location = new System.Drawing.Point(262, 448);
+            this.btnSupprimer.Location = new System.Drawing.Point(289, 606);
             this.btnSupprimer.Name = "btnSupprimer";
-            this.btnSupprimer.Size = new System.Drawing.Size(115, 30);
+            this.btnSupprimer.Size = new System.Drawing.Size(147, 30);
             this.btnSupprimer.TabIndex = 43;
             this.btnSupprimer.Text = "Supprimer";
             this.btnSupprimer.Click += new System.EventHandler(this.btnSupprimer_Click_1);
@@ -246,9 +246,9 @@
             this.btnAjouter.FillColor = System.Drawing.Color.LimeGreen;
             this.btnAjouter.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAjouter.ForeColor = System.Drawing.Color.White;
-            this.btnAjouter.Location = new System.Drawing.Point(20, 448);
+            this.btnAjouter.Location = new System.Drawing.Point(18, 606);
             this.btnAjouter.Name = "btnAjouter";
-            this.btnAjouter.Size = new System.Drawing.Size(115, 30);
+            this.btnAjouter.Size = new System.Drawing.Size(127, 30);
             this.btnAjouter.TabIndex = 41;
             this.btnAjouter.Text = "Ajouter";
             this.btnAjouter.Click += new System.EventHandler(this.btnAjouter_Click_1);
@@ -263,9 +263,9 @@
             this.btnModifier.FillColor = System.Drawing.SystemColors.Highlight;
             this.btnModifier.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModifier.ForeColor = System.Drawing.Color.White;
-            this.btnModifier.Location = new System.Drawing.Point(141, 448);
+            this.btnModifier.Location = new System.Drawing.Point(156, 606);
             this.btnModifier.Name = "btnModifier";
-            this.btnModifier.Size = new System.Drawing.Size(115, 30);
+            this.btnModifier.Size = new System.Drawing.Size(127, 30);
             this.btnModifier.TabIndex = 42;
             this.btnModifier.Text = "Modifier";
             this.btnModifier.Click += new System.EventHandler(this.btnModifier_Click_1);
@@ -277,11 +277,11 @@
             this.dtpDateNaissance.FillColor = System.Drawing.Color.White;
             this.dtpDateNaissance.Font = new System.Drawing.Font("Segoe UI Semibold", 10.25F, System.Drawing.FontStyle.Bold);
             this.dtpDateNaissance.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dtpDateNaissance.Location = new System.Drawing.Point(13, 391);
+            this.dtpDateNaissance.Location = new System.Drawing.Point(25, 537);
             this.dtpDateNaissance.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpDateNaissance.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpDateNaissance.Name = "dtpDateNaissance";
-            this.dtpDateNaissance.Size = new System.Drawing.Size(322, 36);
+            this.dtpDateNaissance.Size = new System.Drawing.Size(367, 36);
             this.dtpDateNaissance.TabIndex = 40;
             this.dtpDateNaissance.Value = new System.DateTime(2025, 2, 26, 15, 13, 18, 446);
             // 
@@ -301,12 +301,12 @@
             this.txtTaille.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
             this.txtTaille.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTaille.IconLeft = ((System.Drawing.Image)(resources.GetObject("txtTaille.IconLeft")));
-            this.txtTaille.Location = new System.Drawing.Point(13, 342);
-            this.txtTaille.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTaille.Location = new System.Drawing.Point(25, 469);
+            this.txtTaille.Margin = new System.Windows.Forms.Padding(4);
             this.txtTaille.Name = "txtTaille";
             this.txtTaille.PlaceholderText = "";
             this.txtTaille.SelectedText = "";
-            this.txtTaille.Size = new System.Drawing.Size(322, 29);
+            this.txtTaille.Size = new System.Drawing.Size(367, 36);
             this.txtTaille.TabIndex = 39;
             // 
             // txtPoids
@@ -325,12 +325,12 @@
             this.txtPoids.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
             this.txtPoids.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPoids.IconLeft = ((System.Drawing.Image)(resources.GetObject("txtPoids.IconLeft")));
-            this.txtPoids.Location = new System.Drawing.Point(13, 291);
-            this.txtPoids.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPoids.Location = new System.Drawing.Point(27, 400);
+            this.txtPoids.Margin = new System.Windows.Forms.Padding(4);
             this.txtPoids.Name = "txtPoids";
             this.txtPoids.PlaceholderText = "";
             this.txtPoids.SelectedText = "";
-            this.txtPoids.Size = new System.Drawing.Size(322, 29);
+            this.txtPoids.Size = new System.Drawing.Size(367, 36);
             this.txtPoids.TabIndex = 38;
             // 
             // txtGroupeSanguin
@@ -349,12 +349,12 @@
             this.txtGroupeSanguin.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
             this.txtGroupeSanguin.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtGroupeSanguin.IconLeft = ((System.Drawing.Image)(resources.GetObject("txtGroupeSanguin.IconLeft")));
-            this.txtGroupeSanguin.Location = new System.Drawing.Point(13, 239);
-            this.txtGroupeSanguin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtGroupeSanguin.Location = new System.Drawing.Point(27, 331);
+            this.txtGroupeSanguin.Margin = new System.Windows.Forms.Padding(4);
             this.txtGroupeSanguin.Name = "txtGroupeSanguin";
             this.txtGroupeSanguin.PlaceholderText = "";
             this.txtGroupeSanguin.SelectedText = "";
-            this.txtGroupeSanguin.Size = new System.Drawing.Size(322, 29);
+            this.txtGroupeSanguin.Size = new System.Drawing.Size(367, 36);
             this.txtGroupeSanguin.TabIndex = 37;
             // 
             // txtTelephone
@@ -373,13 +373,14 @@
             this.txtTelephone.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
             this.txtTelephone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTelephone.IconLeft = ((System.Drawing.Image)(resources.GetObject("txtTelephone.IconLeft")));
-            this.txtTelephone.Location = new System.Drawing.Point(13, 187);
-            this.txtTelephone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTelephone.Location = new System.Drawing.Point(25, 262);
+            this.txtTelephone.Margin = new System.Windows.Forms.Padding(4);
             this.txtTelephone.Name = "txtTelephone";
             this.txtTelephone.PlaceholderText = "";
             this.txtTelephone.SelectedText = "";
-            this.txtTelephone.Size = new System.Drawing.Size(322, 29);
+            this.txtTelephone.Size = new System.Drawing.Size(367, 36);
             this.txtTelephone.TabIndex = 36;
+            this.txtTelephone.TextChanged += new System.EventHandler(this.txtTelephone_TextChanged);
             // 
             // txtEmail
             // 
@@ -397,12 +398,12 @@
             this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
             this.txtEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEmail.IconLeft = ((System.Drawing.Image)(resources.GetObject("txtEmail.IconLeft")));
-            this.txtEmail.Location = new System.Drawing.Point(13, 135);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEmail.Location = new System.Drawing.Point(25, 193);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.PlaceholderText = "";
             this.txtEmail.SelectedText = "";
-            this.txtEmail.Size = new System.Drawing.Size(322, 29);
+            this.txtEmail.Size = new System.Drawing.Size(367, 36);
             this.txtEmail.TabIndex = 35;
             // 
             // txtAdresse
@@ -421,12 +422,12 @@
             this.txtAdresse.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
             this.txtAdresse.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtAdresse.IconLeft = ((System.Drawing.Image)(resources.GetObject("txtAdresse.IconLeft")));
-            this.txtAdresse.Location = new System.Drawing.Point(13, 84);
-            this.txtAdresse.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtAdresse.Location = new System.Drawing.Point(27, 123);
+            this.txtAdresse.Margin = new System.Windows.Forms.Padding(4);
             this.txtAdresse.Name = "txtAdresse";
             this.txtAdresse.PlaceholderText = "";
             this.txtAdresse.SelectedText = "";
-            this.txtAdresse.Size = new System.Drawing.Size(322, 29);
+            this.txtAdresse.Size = new System.Drawing.Size(367, 36);
             this.txtAdresse.TabIndex = 34;
             // 
             // txtNomPrenom
@@ -445,101 +446,107 @@
             this.txtNomPrenom.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
             this.txtNomPrenom.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtNomPrenom.IconLeft = ((System.Drawing.Image)(resources.GetObject("txtNomPrenom.IconLeft")));
-            this.txtNomPrenom.Location = new System.Drawing.Point(13, 32);
-            this.txtNomPrenom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNomPrenom.Location = new System.Drawing.Point(27, 54);
+            this.txtNomPrenom.Margin = new System.Windows.Forms.Padding(4);
             this.txtNomPrenom.Name = "txtNomPrenom";
             this.txtNomPrenom.PlaceholderText = "";
             this.txtNomPrenom.SelectedText = "";
-            this.txtNomPrenom.Size = new System.Drawing.Size(322, 29);
+            this.txtNomPrenom.Size = new System.Drawing.Size(367, 36);
             this.txtNomPrenom.TabIndex = 33;
+            this.txtNomPrenom.TextChanged += new System.EventHandler(this.txtNomPrenom_TextChanged);
             // 
             // lblDateNaissance
             // 
             this.lblDateNaissance.AutoSize = true;
-            this.lblDateNaissance.Location = new System.Drawing.Point(12, 372);
+            this.lblDateNaissance.Location = new System.Drawing.Point(22, 509);
             this.lblDateNaissance.Name = "lblDateNaissance";
-            this.lblDateNaissance.Size = new System.Drawing.Size(140, 16);
+            this.lblDateNaissance.Size = new System.Drawing.Size(194, 25);
             this.lblDateNaissance.TabIndex = 26;
             this.lblDateNaissance.Text = "Date de Naissance";
+            this.lblDateNaissance.Click += new System.EventHandler(this.lblDateNaissance_Click);
             // 
             // lblTaille
             // 
             this.lblTaille.AutoSize = true;
-            this.lblTaille.Location = new System.Drawing.Point(8, 322);
+            this.lblTaille.Location = new System.Drawing.Point(22, 440);
             this.lblTaille.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTaille.Name = "lblTaille";
-            this.lblTaille.Size = new System.Drawing.Size(47, 16);
+            this.lblTaille.Size = new System.Drawing.Size(65, 25);
             this.lblTaille.TabIndex = 32;
             this.lblTaille.Text = "Taille";
             // 
             // lblPoids
             // 
             this.lblPoids.AutoSize = true;
-            this.lblPoids.Location = new System.Drawing.Point(8, 271);
+            this.lblPoids.Location = new System.Drawing.Point(22, 371);
             this.lblPoids.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPoids.Name = "lblPoids";
-            this.lblPoids.Size = new System.Drawing.Size(47, 16);
+            this.lblPoids.Size = new System.Drawing.Size(66, 25);
             this.lblPoids.TabIndex = 30;
             this.lblPoids.Text = "Poids";
             // 
             // lblGroupeSanguin
             // 
             this.lblGroupeSanguin.AutoSize = true;
-            this.lblGroupeSanguin.Location = new System.Drawing.Point(17, 219);
+            this.lblGroupeSanguin.Location = new System.Drawing.Point(22, 302);
             this.lblGroupeSanguin.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblGroupeSanguin.Name = "lblGroupeSanguin";
-            this.lblGroupeSanguin.Size = new System.Drawing.Size(118, 16);
+            this.lblGroupeSanguin.Size = new System.Drawing.Size(169, 25);
             this.lblGroupeSanguin.TabIndex = 27;
             this.lblGroupeSanguin.Text = "Groupe Sanguin";
+            this.lblGroupeSanguin.Click += new System.EventHandler(this.lblGroupeSanguin_Click);
             // 
             // lblTelephone
             // 
             this.lblTelephone.AutoSize = true;
-            this.lblTelephone.Location = new System.Drawing.Point(17, 167);
+            this.lblTelephone.Location = new System.Drawing.Point(20, 233);
             this.lblTelephone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTelephone.Name = "lblTelephone";
-            this.lblTelephone.Size = new System.Drawing.Size(82, 16);
+            this.lblTelephone.Size = new System.Drawing.Size(115, 25);
             this.lblTelephone.TabIndex = 24;
             this.lblTelephone.Text = "Telephone";
             // 
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(8, 115);
+            this.lblEmail.Location = new System.Drawing.Point(23, 164);
             this.lblEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(46, 16);
+            this.lblEmail.Size = new System.Drawing.Size(65, 25);
             this.lblEmail.TabIndex = 20;
             this.lblEmail.Text = "Email";
             // 
             // lblAdresse
             // 
             this.lblAdresse.AutoSize = true;
-            this.lblAdresse.Location = new System.Drawing.Point(8, 64);
+            this.lblAdresse.Location = new System.Drawing.Point(23, 94);
             this.lblAdresse.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAdresse.Name = "lblAdresse";
-            this.lblAdresse.Size = new System.Drawing.Size(65, 16);
+            this.lblAdresse.Size = new System.Drawing.Size(92, 25);
             this.lblAdresse.TabIndex = 17;
             this.lblAdresse.Text = "Adresse";
             // 
             // lblNomPrenom
             // 
             this.lblNomPrenom.AutoSize = true;
-            this.lblNomPrenom.Location = new System.Drawing.Point(17, 12);
+            this.lblNomPrenom.Location = new System.Drawing.Point(23, 25);
             this.lblNomPrenom.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNomPrenom.Name = "lblNomPrenom";
-            this.lblNomPrenom.Size = new System.Drawing.Size(95, 16);
+            this.lblNomPrenom.Size = new System.Drawing.Size(134, 25);
             this.lblNomPrenom.TabIndex = 14;
             this.lblNomPrenom.Text = "Nom prenom";
             // 
             // dgPatient
             // 
             this.dgPatient.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
-            this.dgPatient.Location = new System.Drawing.Point(430, 141);
+            this.dgPatient.ColumnHeadersHeight = 34;
+            this.dgPatient.Location = new System.Drawing.Point(490, 294);
             this.dgPatient.Margin = new System.Windows.Forms.Padding(4);
             this.dgPatient.Name = "dgPatient";
-            this.dgPatient.Size = new System.Drawing.Size(927, 409);
+            this.dgPatient.RowHeadersWidth = 62;
+            this.dgPatient.Size = new System.Drawing.Size(910, 409);
             this.dgPatient.TabIndex = 17;
+            this.dgPatient.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgPatient_CellContentClick);
             // 
             // btnChoisir
             // 
@@ -551,9 +558,9 @@
             this.btnChoisir.FillColor = System.Drawing.Color.Crimson;
             this.btnChoisir.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnChoisir.ForeColor = System.Drawing.Color.White;
-            this.btnChoisir.Location = new System.Drawing.Point(417, 35);
+            this.btnChoisir.Location = new System.Drawing.Point(493, 250);
             this.btnChoisir.Name = "btnChoisir";
-            this.btnChoisir.Size = new System.Drawing.Size(115, 30);
+            this.btnChoisir.Size = new System.Drawing.Size(122, 37);
             this.btnChoisir.TabIndex = 44;
             this.btnChoisir.Text = "Choisir";
             this.btnChoisir.Click += new System.EventHandler(this.btnChoisir_Click_1);
@@ -566,7 +573,7 @@
             this.pnBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnBar.Location = new System.Drawing.Point(0, 0);
             this.pnBar.Name = "pnBar";
-            this.pnBar.Size = new System.Drawing.Size(1370, 34);
+            this.pnBar.Size = new System.Drawing.Size(1413, 34);
             this.pnBar.TabIndex = 45;
             // 
             // guna2ControlBox2
@@ -575,7 +582,7 @@
             this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MaximizeBox;
             this.guna2ControlBox2.FillColor = System.Drawing.Color.White;
             this.guna2ControlBox2.IconColor = System.Drawing.Color.Black;
-            this.guna2ControlBox2.Location = new System.Drawing.Point(1273, 3);
+            this.guna2ControlBox2.Location = new System.Drawing.Point(1316, 3);
             this.guna2ControlBox2.Name = "guna2ControlBox2";
             this.guna2ControlBox2.Size = new System.Drawing.Size(35, 28);
             this.guna2ControlBox2.TabIndex = 9;
@@ -585,7 +592,7 @@
             this.cbQuitter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cbQuitter.FillColor = System.Drawing.Color.White;
             this.cbQuitter.IconColor = System.Drawing.Color.Red;
-            this.cbQuitter.Location = new System.Drawing.Point(1322, 3);
+            this.cbQuitter.Location = new System.Drawing.Point(1365, 3);
             this.cbQuitter.Name = "cbQuitter";
             this.cbQuitter.Size = new System.Drawing.Size(35, 28);
             this.cbQuitter.TabIndex = 8;
@@ -593,10 +600,10 @@
             // 
             // frmPatient
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(1370, 553);
+            this.ClientSize = new System.Drawing.Size(1413, 715);
             this.ControlBox = false;
             this.Controls.Add(this.pnBar);
             this.Controls.Add(this.btnChoisir);

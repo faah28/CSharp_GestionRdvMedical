@@ -442,5 +442,25 @@ namespace AppGroupe2.View
         {
 
         }
+
+        private void lblListeAgendaMedecin_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblCreneau_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAjouter_Click_2(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSupprimer_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

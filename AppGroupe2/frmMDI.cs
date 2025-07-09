@@ -124,15 +124,5 @@ namespace AppGroupe2
         {
 
         }
-
-        private void btnUtilisateur_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnRv_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
